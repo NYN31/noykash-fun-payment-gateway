@@ -137,12 +137,12 @@ const TransactionForm = () => {
         onChangeSenderPhone={(e) => handleSenderPhone(AMOUNT, e.target.value)}
       />
       <Button
-        bg="#e2136e"
+        bg="#911109"
         color="#FFF"
         p="2px"
         fontSize={["14px", "16px"]}
         _hover={{
-          bg: "#e2136e",
+          bg: "#911109",
           color: "#FFF",
         }}
         onClick={onSubmitForTransaction}

@@ -50,7 +50,7 @@ const ApplicationModal = ({ isOpen, onClose }) => {
     >
       <ModalOverlay />
       <ModalContent maxWidth="750px">
-        <ModalHeader color="#e2136e">{dearSirAndMadam}</ModalHeader>
+        <ModalHeader color="#911109">{dearSirAndMadam}</ModalHeader>
         <ModalCloseButton onClick={handleClose} />
         <ModalBody>
           <Application />
@@ -58,10 +58,10 @@ const ApplicationModal = ({ isOpen, onClose }) => {
 
         <ModalFooter>
           <Button
-            bg="#e2136e"
+            bg="#911109"
             color="#FFF"
             onClick={handleClose}
-            _hover={{ bg: "#e2136e", color: "#FFF" }}
+            _hover={{ bg: "#911109", color: "#FFF" }}
           >
             Close
           </Button>

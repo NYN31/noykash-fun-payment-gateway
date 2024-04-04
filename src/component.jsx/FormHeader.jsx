@@ -5,7 +5,7 @@ const FormHeader = () => {
   const { bkashPaymentGateway, payWithBkashANdHaveFun } = textData;
   return (
     <Flex direction="column" align="center" gap="2px">
-      <Text fontSize={["28px", "36px"]} color="#e2136e">
+      <Text fontSize={["28px", "36px"]} color="#911109">
         {bkashPaymentGateway}
       </Text>
       <Text fontSize={["14px", "18px"]} color="gray.800">
