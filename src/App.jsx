@@ -1,7 +1,7 @@
 import { Box, Flex, Image, useMediaQuery } from "@chakra-ui/react";
 import TransactionForm from "./component.jsx/TransactionForm";
 import FormHeader from "./component.jsx/FormHeader";
-import banner from "./assets/banner.jpg";
+import banner from "./assets/banner.svg";
 import Navbar from "./component.jsx/Navbar";
 import Footer from "./component.jsx/Footer";
 

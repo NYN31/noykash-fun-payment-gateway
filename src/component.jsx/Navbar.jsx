@@ -1,5 +1,5 @@
 import { Flex, Image, Spacer } from "@chakra-ui/react";
-import banner from "../assets/logo.svg";
+import logo from "../assets/logoWithText.svg";
 
 function Navbar() {
   return (
@@ -16,7 +16,7 @@ function Navbar() {
       bgColor="#f4f4f5"
       px="40px"
     >
-      <Image src={banner} width="140px" alt="Logo" />
+      <Image src={logo} width="120px" alt="Logo" />
       <Spacer />
     </Flex>
   );
