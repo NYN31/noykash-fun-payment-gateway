@@ -7,39 +7,38 @@ import Footer from "./component.jsx/Footer";
 
 function App() {
   const [isMinimumThan1024] = useMediaQuery("(max-width: 1024px)");
-  console.log(isMinimumThan1024);
 
   return (
     <Box>
       <Navbar />
-      <Flex
-        direction="row"
-        height="100vh"
-        justifyContent="center"
-        alignItems="center"
-        bgColor="#FFFFFF"
-      >
-        {!isMinimumThan1024 && (
-          <Flex
-            justifyContent="center"
-            alignItems="center"
-            width="500px"
-            borderRadius="10px"
-          >
-            <Image src={banner} width="100%" height="50%" alt="Banner pic" />
-          </Flex>
-        )}
+      <Box py={[100, 120, 140, 140, 0]}>
         <Flex
-          direction="column"
-          gap="30px"
-          width={isMinimumThan1024 ? "95%" : "50%"}
+          direction={["column", "column", "column", "row"]}
+          height="100vh"
           justifyContent="center"
           alignItems="center"
+          bgColor="#FFFFFF"
         >
-          <FormHeader />
-          <TransactionForm />
+          <Flex justifyContent="center" alignItems="center" borderRadius="10px">
+            <Image
+              src={banner}
+              width={["350px", "450px", "500px", "550px"]}
+              alt="Banner pic"
+            />
+          </Flex>
+
+          <Flex
+            direction="column"
+            gap="30px"
+            width={isMinimumThan1024 ? "95%" : "50%"}
+            justifyContent="center"
+            alignItems="center"
+          >
+            <FormHeader />
+            <TransactionForm />
+          </Flex>
         </Flex>
-      </Flex>
+      </Box>
       <Footer />
     </Box>
   );
